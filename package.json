@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'testing'",
+    "check": "prettier --check ./**/*.{html,css,js}",
+    "format": "prettier --write ./**/*.{html,css,js}"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "stylelint": "^15.10.2"
+  },
+  "devDependencies": {
+    "prettier": "3.0.1"
+  }
+}
