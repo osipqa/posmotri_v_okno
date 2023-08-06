@@ -164,8 +164,8 @@ ol {
 
 .search-form {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  gap: 40px;
   padding-bottom: 6px;
   height: 54px;
   width: 711px;
