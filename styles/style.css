@@ -53,8 +53,6 @@ ol {
   list-style: none;
 }
 
-/* - start content - */
-
 .content {
   display: flex;
   align-items: flex-end;
@@ -88,8 +86,6 @@ ol {
 .content__accent {
   color: #545050;
 }
-
-/* - video content - */
 
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
@@ -125,8 +121,6 @@ ol {
   line-height: 90%;
 }
 
-/* - end video content */
-
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -135,9 +129,8 @@ input:focus-visible {
   outline: none;
 }
 
-/* - start f/h/a - */
-
-.content__card-link_current, .content__card-link:active {
+.content__card-link_current,
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -154,7 +147,8 @@ input:focus-visible {
   outline-offset: 2px;
 }
 
-.search-form__textfield:active, .search-form__textfield:focus-visible,
+.search-form__textfield:active,
+.search-form__textfield:focus-visible,
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
@@ -167,15 +161,11 @@ input:focus-visible {
 .button:active {
   background: #545050;
 }
-/* - end f/h/a - */
-
-/* - start search - */
 
 .search-form {
   display: flex;
   gap: 40px;
-  height: 54px;
-  width: 711px;
+  width: 100%;
 }
 
 .search-form__submit-button {
@@ -196,7 +186,6 @@ input:focus-visible {
   min-height: 27px;
 }
 
-
 .button {
   display: flex;
   justify-content: center;
@@ -204,8 +193,11 @@ input:focus-visible {
   border: 1px solid currentColor;
   background-color: transparent;
   cursor: pointer;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: inherit;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
   color: inherit;
   width: 100%;
   height: 34px;
@@ -243,8 +235,6 @@ input:focus-visible {
   gap: 15px;
 }
 
-/* - end search - */
-
 .title {
   font-family: "Oswald", sans-serif;
   font-size: 75px;
@@ -253,8 +243,6 @@ input:focus-visible {
   line-height: 94%;
   text-transform: uppercase;
 }
-
-/* - result video - */
 
 .result__video-container {
   position: relative;
@@ -272,7 +260,6 @@ input:focus-visible {
   align-items: flex-start;
   gap: 16px;
 }
-/* - broken checkbox - */
 
 .search-form__checkbox {
   display: none;
@@ -289,14 +276,12 @@ input:focus-visible {
   align-items: center;
 }
 
-label input[type='checkbox']:checked ~ .search-form__pseudo-checkbox::before {
+input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox::before {
   content: "";
   min-inline-size: 15px;
   min-block-size: 15px;
   background-color: #fff;
 }
-
-/* invisible items */ 
 
 .visually-hidden {
   position: absolute;
