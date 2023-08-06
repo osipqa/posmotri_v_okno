@@ -125,6 +125,10 @@ ol {
   margin-bottom: 30px;
 }
 
+.search-form__label:focus-visible {
+  outline: none;
+}
+
 input:focus-visible {
   outline: none;
 }
@@ -142,7 +146,7 @@ input:focus-visible {
   text-decoration-thickness: 1px;
 }
 
-.search-form__label:focus-visible {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -259,10 +263,6 @@ input:focus-visible {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-}
-
-.search-form__checkbox {
-  display: none;
 }
 
 .search-form__pseudo-checkbox {
