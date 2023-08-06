@@ -60,7 +60,6 @@ ol {
   align-items: flex-end;
   width: 1140px;
   gap: 30px;
-  
 }
 
 .content__details {
@@ -168,6 +167,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding-bottom: 6px;
   height: 54px;
   width: 711px;
 }
@@ -238,8 +238,8 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
-  width: 212px;
+  gap: 11px;
+  width: 213px;
 }
 
 /* - end search - */
@@ -272,26 +272,27 @@ ol {
 }
 /* - broken checkbox - */
 
-input[type="checkbox"] + span {
+.search-form__pseudo-checkbox {
+  position: relative;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
-  background-color: transparent;
   margin-right: 5px;
   margin-left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-input[type="checkbox"]:checked + span {
-  width: 19px;
-  height: 19px;
-  background-image: url(../images/checkbox.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border: none;
+label input[type='checkbox']:checked ~ .search-form__pseudo-checkbox::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
 }
 
-/* invisible items */
+/* invisible items */ 
 
 .visually-hidden {
   position: absolute;
